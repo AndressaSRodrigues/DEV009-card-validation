@@ -2,13 +2,95 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Hiking.com</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+    <header>
+
+      <h1>Don't get lost in paradise</h1>
+      <p>Book your next hiking experience with professional guides.</p>
+
+      <figure>
+        <img src="https://img.freepik.com/free-vector/sunrise-hiking-concept-illustration_114360-13964.jpg?w=1060&t=st=1685643917~exp=1685644517~hmac=82ad3ab0a87605f243fd4738d8d7f1a28042e4ab535b8cbdacc295b50babe19a" alt="People hiking." height="500px">
+      </figure>
+
+      <nav>
+        <a href="#select-product">Our Trails</a>
+        <a href="#reservation">Reservation</a>
+      </nav>
+
+    </header>
+
+    <main>
+      <section id="select-product">
+
+          <h2>Our trails</h2>
+          <p>We operate with small groups. All of our guides are certified.</p>
+
+          <article id="product-one">
+            <h3>Aguas de Ramon</h3>
+            <img class="trail-img" src="https://www.cascada.travel/hs-fs/hubfs/Aguas%20de%20Ramon%20BAJA%20(8%20of%201).jpg?width=2652&name=Aguas%20de%20Ramon%20BAJA%20(8%20of%201).jpg">
+            <p><b>Difficulty:</b> Intermediate<br> <b>Length:</b> 7-8 hours roundtrip <br> <b>Location:</b> Santiago</p><p>$50 USD per person</p>
+            <a href="">+info</a>
+          </article>
+
+          <article id="product-two">
+            <h3>Cerro Manquehue</h3>
+            <img class="trail-img" src="https://www.cascada.travel/hs-fs/hubfs/manquehue.jpg?width=1632&name=manquehue.jpg">
+            <p><b>Difficulty:</b> Intermediate <br> <b>Length:</b> 2-3 hours round trip <br> <b>Location:</b> Santiago</p><p>$25 USD per person</p>
+            <a href="">+info</a>
+          </article>
+
+          <article id="product-three">
+            <h3>Mirador de Los Condores</h3>
+            <img class="trail-img" src="https://img.freepik.com/free-photo/high-angle-young-woman-mountain-looking-away_23-2148343493.jpg?w=1060&t=st=1685587261~exp=1685587861~hmac=fa45dcf4434ea056d0398f7fbff826b5750f503435ff37b70d93ce64aa3d61a3">
+            <p><b>Difficulty:</b> Intermediate<br> <b>Length:</b> 4-5 hours round trip<br> <b>Location:</b> Cajón de Maipo</p><p>$35 USD per person</p>
+            <a href="">+info</a>
+          </article>
+
+      </section>
+
+      <section id="reservation">
+
+          <h2>Book Online</h2>
+          <p>Fill in the information and validate your card to confirm the reservation.</p>
+
+          <form>
+            <input type="text" id="name" placeholder="Full name" required><br>
+            <input type="email" id="email" placeholder="Email address" required><br>
+        
+            <h3>Choose your trail:</h3>
+            <input type="radio" id="option-a" name="option">
+            <label for="option" name="option" value="a">Aguas de Ramon</label><br>
+            
+            <input type="radio" id="option-b" name="option">
+            <label for="option" name="option" value="b">Mirador de Los Condores</label><br>
+            
+            <input type="radio" id="option-c" name="option">
+            <label for="option" name="option" value="c">Cerro Manquehue</label><br>
+
+            <h3>Enter your credit card information:</h3>
+            <input type="text" id="credit-card-number" placeholder= "Credit Card Number" required><br>
+            <input type="text" id="cvv" maxlength="3" placeholder= "CVV" required><br>
+            <label for="expiration">Expiration date:</label><br>
+            <input type="month" id="expiration"><br><br>
+            <button type="button">Confirm</button>
+
+          </form> 
+          <!--
+          <figure>
+            <img id="reservation-img" src="https://img.freepik.com/free-photo/woman-traveler-with-backpack-beautiful-summer-landscape_1150-1943.jpg?w=360&t=st=1685628933~exp=1685629533~hmac=6062eb80cf6356a884fdf99dc7a1bef13955537ff8610d1e598bdde6051f9af7">
+          </figure>
+          -->
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© hiking.com</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
