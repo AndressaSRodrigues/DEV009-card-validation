@@ -10,7 +10,7 @@
     <header>
 
       <h1>Don't get lost in paradise</h1>
-      <p>Book your next hiking experience with professional guides.</p>
+      <p>Visiting Chile?<br>Book your next hiking experience with professional guides.</p>
 
       <figure>
         <img src="https://img.freepik.com/free-vector/sunrise-hiking-concept-illustration_114360-13964.jpg?w=1060&t=st=1685643917~exp=1685644517~hmac=82ad3ab0a87605f243fd4738d8d7f1a28042e4ab535b8cbdacc295b50babe19a" alt="People hiking." height="500px">
@@ -55,35 +55,16 @@
       <section id="reservation">
 
           <h2>Book Online</h2>
-          <p>Fill in the information and validate your card to confirm the reservation.</p>
+          <p>Vaidate your card to proceed with your booking.</p>
 
-          <form>
-            <input type="text" id="name" placeholder="Full name" required><br>
-            <input type="email" id="email" placeholder="Email address" required><br>
-        
-            <h3>Choose your trail:</h3>
-            <input type="radio" id="option-a" name="option">
-            <label for="option" name="option" value="a">Aguas de Ramon</label><br>
-            
-            <input type="radio" id="option-b" name="option">
-            <label for="option" name="option" value="b">Mirador de Los Condores</label><br>
-            
-            <input type="radio" id="option-c" name="option">
-            <label for="option" name="option" value="c">Cerro Manquehue</label><br>
+          <form id="validate-info">
 
-            <h3>Enter your credit card information:</h3>
-            <input type="text" id="credit-card-number" placeholder= "Credit Card Number" required><br>
-            <input type="text" id="cvv" maxlength="3" placeholder= "CVV" required><br>
-            <label for="expiration">Expiration date:</label><br>
-            <input type="month" id="expiration"><br><br>
-            <button type="button">Confirm</button>
+            <h3>Enter your credit card number:</h3>
+            <input type="text" id="credit-card-number" maxlength="16" placeholder= "Credit Card Number" required><br><br>
+            <button type="submit" id="validate-button">Confirm</button><br>
 
-          </form> 
-          <!--
-          <figure>
-            <img id="reservation-img" src="https://img.freepik.com/free-photo/woman-traveler-with-backpack-beautiful-summer-landscape_1150-1943.jpg?w=360&t=st=1685628933~exp=1685629533~hmac=6062eb80cf6356a884fdf99dc7a1bef13955537ff8610d1e598bdde6051f9af7">
-          </figure>
-          -->
+          </form>
+
       </section>
 
     </main>

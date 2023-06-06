@@ -27,10 +27,8 @@ a:hover {
 }
 
 .trail-img {
-    border-top: 0;
     border-bottom: 15px;
     border-right: 15px;
-    border-left: 0;
     border-color: #658864;
     border-radius: 50%;
     border-style: solid;
