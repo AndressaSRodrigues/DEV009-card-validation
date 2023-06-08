@@ -1,11 +1,16 @@
 body {
-    background-color: #fff;
+    background-color: #EEEEEE;
     color:#40513B;
     text-align: center;
 }
 
 header {
     padding: 2%;
+}
+
+.main-img {
+    border: 5px solid #658864;
+    border-radius: 5px;
 }
 
 a {
@@ -44,12 +49,12 @@ a:hover {
 }
 
 #reservation {
-    align-items: center;
     background-color: #658864;
     border-radius: 50px;
     color: #EEEEEE;
-    margin: 100px 400px 100px 400px;
+    margin: auto;
     padding: 2%;
+    width: 50%;
 }
 
 form {
@@ -63,7 +68,7 @@ input {
 }
 
 #credit-card-number {
-    width: 35%;
+    width: 50%;
 }
 
 #cvv {

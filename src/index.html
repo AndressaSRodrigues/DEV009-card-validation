@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Hiking.com</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Satisfy&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -13,7 +16,7 @@
       <p>Visiting Chile?<br>Book your next hiking experience with professional guides.</p>
 
       <figure>
-        <img src="https://img.freepik.com/free-vector/sunrise-hiking-concept-illustration_114360-13964.jpg?w=1060&t=st=1685643917~exp=1685644517~hmac=82ad3ab0a87605f243fd4738d8d7f1a28042e4ab535b8cbdacc295b50babe19a" alt="People hiking." height="500px">
+        <img class="main-img" src="https://img.freepik.com/free-photo/couple-trekking-together_53876-14592.jpg?w=1060&t=st=1686153374~exp=1686153974~hmac=ea209e34c366d5c74f76e5d10a6dc8a5eee14e58dcec1a001e0d4840b6b1a941" alt="People hiking." height="500px">
       </figure>
 
       <nav>
@@ -55,12 +58,24 @@
       <section id="reservation">
 
           <h2>Book Online</h2>
-          <p>Vaidate your card to proceed with your booking.</p>
+          <p>Enter your info and validate your card to proceed with your booking.</p>
 
           <form id="validate-info">
-
-            <h3>Enter your credit card number:</h3>
-            <input type="text" id="credit-card-number" maxlength="16" placeholder= "Credit Card Number" required><br><br>
+            <label for="client-name">Name</label><br>
+            <input type="text" required><br><br>
+            <label for="client-email">Email address</label><br>
+            <input type="email" required><br><br>
+            <label for="trails">Choose your trail</label><br>
+            <select id="trails" name="trails">
+              <option value="aguas-ramon">Aguas de Ramon</option>
+              <option value="manquehue">Cerro Manquehue</option>
+              <option value="mirador-condores">Mirador de Los Condores</option>
+            </select><br><br>
+            <label for="date">Pick a date</label><br>
+            <input type="date"><br><br>
+            <label for="credit-card-number">Enter your credit card number</label><br>
+            <input type="text" id="credit-card-number" maxlength="16" placeholder="Credit Card Number" required><br><br>
+            <p id="validate-message"></p>
             <button type="submit" id="validate-button">Confirm</button><br>
 
           </form>

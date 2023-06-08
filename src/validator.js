@@ -1,31 +1,44 @@
 const validator = {
 
-    isValid: function(creditCardNumber) {
+  isValid: function(creditCardNumber) {
 
-        let reversedNumber = creditCardNumber.split('').reverse();
+    const reversedNumber = creditCardNumber.split('').reverse();
 
-        console.log(reversedNumber);
+    let duplicatedSum = 0;
+    let digitsSum = 0;
 
-        for (let i = 1; i < reversedNumber.length; i += 2) {
+    for (let i = 1; i < reversedNumber.length; i += 2) {
             
-            let duplicated = reversedNumber[i] *= 2;
+      let duplicated = reversedNumber[i] * 2;
 
-            if (duplicated > 9){
-                duplicated -= 9;
-            }
-            
-            console.log(duplicated);
-        }
+      if (duplicated > 9){
+        duplicated -= 9;
+      }
 
-        /* for (let i = 0; i < reversedNumber.length; i += 2) {
+      duplicatedSum += duplicated;
+    }
 
-            let otherDigits = reversedNumber[i];
+    for (let n = 0; n < reversedNumber.length; n += 2) {
 
-            console.log(otherDigits);
+      const digits = parseInt(reversedNumber[n]);
+      digitsSum += digits;
+    
+    }
 
-        }*/
+    const totalSum = duplicatedSum += digitsSum;
+
+    return totalSum % 10 === 0
+
+  },
+
+  maskify: function(creditCardNumber) {
+
+    const maskedDigits = creditCardNumber.slice(0, -4).replace(/[0-9]/g, '#');
+    const maskedNumber = maskedDigits + creditCardNumber.slice(-4);
+
+    return maskedNumber
+
+  }
 }
-}
-
 
 export default validator;
