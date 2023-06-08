@@ -13,4 +13,6 @@ validateButton.addEventListener('click', (e) => {
     document.getElementById('validate-message').innerHTML = 'We could not validate your card.';
   }
 
+  
+
 });

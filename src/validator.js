@@ -33,7 +33,7 @@ const validator = {
 
   maskify: function(creditCardNumber) {
 
-    const maskedDigits = creditCardNumber.slice(0, -4).replace(/[0-9]/g, '#');
+    const maskedDigits = creditCardNumber.slice(0, -4).replace(/\w/g, '#');
     const maskedNumber = maskedDigits + creditCardNumber.slice(-4);
 
     return maskedNumber
