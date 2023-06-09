@@ -64,6 +64,7 @@
             <input type="email" required><br><br>
             <label for="trails">Choose your trail</label><br>
             <select id="trails" name="trails">
+              <option value="aguas-ramon"></option>
               <option value="aguas-ramon">Aguas de Ramon</option>
               <option value="manquehue">Cerro Manquehue</option>
               <option value="mirador-condores">Mirador de Los Condores</option>
@@ -71,8 +72,8 @@
             <label for="date">Pick a date</label><br>
             <input type="date"><br><br>
             <label for="credit-card-number">Enter your credit card number</label><br>
-            <input type="text" id="credit-card-number" maxlength="16" placeholder="Credit Card Number" required><br><br>
-            <p id="validate-message"></p><br>
+            <input type="text" id="credit-card-number" maxlength="16" placeholder="Credit Card Number" pattern="[0-9]{16}" required><br><br>
+            <h3 id="validate-message"></h3><br>
             <button type="submit" id="validate-button">Confirm</button><br>
 
           </form>
