@@ -4,6 +4,8 @@
 
 Este proyecto ha sido desarrollado en HTML, CSS y JavaScript como parte del bootcamp de Laboratoria.
 
+* [hiking.com](https://andressasrodrigues.github.io/DEV009-card-validation/src/)
+
 ## Descripción - Hiking.com
 
 Hiking.com ofrece servicios de senderismo con guías profesionales en Chile. El producto está dirigido a turistas que visitan el país. Los usuarios podrán leer acerca de los servicios disponibles, elegir una opción y realizar la reserva a través del sitio web.
