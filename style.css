@@ -1,0 +1,81 @@
+body {
+    background-color: #EEEEEE;
+    color:#40513B;
+    text-align: center;
+}
+
+header {
+    padding: 2%;
+}
+
+.main-img {
+    border: 5px solid #658864;
+    border-radius: 5px;
+}
+
+a {
+    background-color: #658864;
+    color: #fff;
+    padding: 1%;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #40513B;
+}
+
+#select-product {
+    align-content: center;
+    background-color: #DDDDDD;
+    margin: 50px 0;
+    padding: 2%;
+}
+
+.trail-img {
+    border-bottom: 15px;
+    border-right: 15px;
+    border-color: #658864;
+    border-radius: 50%;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+}
+
+#product-one,
+#product-two,
+#product-three {
+    display: inline-block;
+    margin-inline: 115px;
+}
+
+#reservation {
+    background-color: #658864;
+    border-radius: 50px;
+    color: #EEEEEE;
+    margin: auto;
+    padding: 2%;
+    width: 50%;
+}
+
+form {
+    text-align: justify;
+    margin-left: 30px;
+}
+
+input {
+    border: 3px solid #40513B;
+    border-radius: 5px;
+}
+
+#credit-card-number {
+    width: 50%;
+}
+
+#cvv {
+    width: 10%;
+}
+
+footer {
+    color: #658864;
+    font-size: 18px;
+}

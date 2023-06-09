@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hiking.com</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+
+    <header>
+
+      <h1>Don't get lost in paradise</h1>
+      <p>Visiting Chile?<br>Book your next hiking experience with professional guides.</p>
+
+      <figure>
+        <img class="main-img" src="https://img.freepik.com/free-photo/couple-trekking-together_53876-14592.jpg?w=1060&t=st=1686153374~exp=1686153974~hmac=ea209e34c366d5c74f76e5d10a6dc8a5eee14e58dcec1a001e0d4840b6b1a941" alt="People hiking." height="500px">
+      </figure>
+
+      <nav>
+        <a href="#select-product">Our Trails</a>
+        <a href="#reservation">Reservation</a>
+      </nav>
+
+    </header>
+
+    <main>
+      <section id="select-product">
+
+          <h2>Our trails</h2>
+          <p>We operate with small groups. All of our guides are certified.</p>
+
+          <article id="product-one">
+            <h3>Aguas de Ramon</h3>
+            <img class="trail-img" src="https://www.cascada.travel/hs-fs/hubfs/Aguas%20de%20Ramon%20BAJA%20(8%20of%201).jpg?width=2652&name=Aguas%20de%20Ramon%20BAJA%20(8%20of%201).jpg">
+            <p><b>Difficulty:</b> Intermediate<br> <b>Length:</b> 7-8 hours roundtrip <br> <b>Location:</b> Santiago</p><p>$50 USD per person</p>
+            <a href="">+info</a>
+          </article>
+
+          <article id="product-two">
+            <h3>Cerro Manquehue</h3>
+            <img class="trail-img" src="https://www.cascada.travel/hs-fs/hubfs/manquehue.jpg?width=1632&name=manquehue.jpg">
+            <p><b>Difficulty:</b> Intermediate <br> <b>Length:</b> 2-3 hours round trip <br> <b>Location:</b> Santiago</p><p>$25 USD per person</p>
+            <a href="">+info</a>
+          </article>
+
+          <article id="product-three">
+            <h3>Mirador de Los Condores</h3>
+            <img class="trail-img" src="https://img.freepik.com/free-photo/high-angle-young-woman-mountain-looking-away_23-2148343493.jpg?w=1060&t=st=1685587261~exp=1685587861~hmac=fa45dcf4434ea056d0398f7fbff826b5750f503435ff37b70d93ce64aa3d61a3">
+            <p><b>Difficulty:</b> Intermediate<br> <b>Length:</b> 4-5 hours round trip<br> <b>Location:</b> Cajón de Maipo</p><p>$35 USD per person</p>
+            <a href="">+info</a>
+          </article>
+
+      </section>
+
+      <section id="reservation">
+
+          <h2>Book Online</h2>
+          <p>Enter your info and validate your card to proceed with your booking.</p>
+
+          <form id="validate-info">
+            <label for="client-name">Name</label><br>
+            <input type="text" required><br><br>
+            <label for="client-email">Email address</label><br>
+            <input type="email" required><br><br>
+            <label for="trails">Choose your trail</label><br>
+            <select id="trails" name="trails">
+              <option value="aguas-ramon"></option>
+              <option value="aguas-ramon">Aguas de Ramon</option>
+              <option value="manquehue">Cerro Manquehue</option>
+              <option value="mirador-condores">Mirador de Los Condores</option>
+            </select><br><br>
+            <label for="date">Pick a date</label><br>
+            <input type="date"><br><br>
+            <label for="credit-card-number">Enter your credit card number</label><br>
+            <input type="text" id="credit-card-number" maxlength="16" placeholder="Credit Card Number" pattern="[0-9]{16}" required><br><br>
+            <h3 id="validate-message"></h3><br>
+            <button type="submit" id="validate-button">Confirm</button><br>
+
+          </form>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© hiking.com</p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
